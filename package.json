@@ -1,7 +1,7 @@
 {
   "name": "@letslego/helix-channels",
   "version": "0.1.0",
-  "description": "Helix channel adapters \u2014 HTTP, web console, Slack, Discord, and more.",
+  "description": "Helix channel adapters — HTTP, web console, Slack, Discord, and more.",
   "type": "module",
   "license": "Apache-2.0",
   "repository": {
@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --import tsx --test test/**/*.test.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
   },
   "engines": {
     "node": ">=20"
